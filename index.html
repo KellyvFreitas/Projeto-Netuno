@@ -34,52 +34,52 @@
     <div class="formulario">
       <img src="./assets/img/bannertopo.png" alt="banner topo" />
       <form>
-        <div>
-          <h1>Formulário de Cadastro</h1>
+        <div class="formulario-dados-pessoais">
+          <span class="titulo">Formulário de Cadastro</span>
 
-          <h2>Preencha seus dados</h2>
+          <span class="subtitulo">Preencha seus dados</span>
 
           <div>
             <input class="input-group" placeholder="Nome completo" type="text" />
           </div>
 
           <input class="input-group" placeholder="E-mail" type="email" />
+          <select class="input-group" name="select">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio grande do Norte</option>
+            <option value="RS">Rio grande do sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
         </div>
 
-        <select class="input-group" name="select">
-          <option value="AC">Acre</option>
-          <option value="AL">Alagoas</option>
-          <option value="AP">Amapá</option>
-          <option value="AM">Amazonas</option>
-          <option value="BA">Bahia</option>
-          <option value="CE">Ceará</option>
-          <option value="DF">Distrito Federal</option>
-          <option value="ES">Espírito Santo</option>
-          <option value="GO">Goiás</option>
-          <option value="MA">Maranhão</option>
-          <option value="MT">Mato Grosso</option>
-          <option value="MS">Mato Grosso do Sul</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="PA">Pará</option>
-          <option value="PB">Paraíba</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="PI">Piauí</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="RN">Rio grande do Norte</option>
-          <option value="RS">Rio grande do sul</option>
-          <option value="RO">Rondônia</option>
-          <option value="RR">Roraima</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="SP">São Paulo</option>
-          <option value="SE">Sergipe</option>
-          <option value="TO">Tocantins</option>
-        </select>
 
         <div>
           <div class="checkboxs">
-            <div>Conhecimento de programação</div>
-            <div>
+            <div class="subtitulo fonte-white">Conhecimento de Programação*</div>
+            <div class="checkbox">
               <input type="checkbox" id="HTML" name="Conhecimento" value="HTML" />
               <label for="html">HTML</label>
 
@@ -92,7 +92,7 @@
               <input type="checkbox" id="PHP" name="Conhecimento" value="PHP" />
               <label for="PHP">PHP</label>
             </div>
-            <div>
+            <div class="checkbox">
               <input type="checkbox" id=".net" name="Conhecimento" value=".net" />
               <label for=".net">.Net</label>
 
@@ -106,7 +106,7 @@
               <label for="React Native">React Native</label>
             </div>
 
-            <div>
+            <div class="checkbox">
               <input type="checkbox" id="Node" name="Conhecimento" value="Node" />
               <label for="Node">Node</label>
 
@@ -121,32 +121,40 @@
             </div>
           </div>
 
-          <div>
-            <h4>Já trabalhou com Desenvolvimento?</h4>
+          <div class="formulario-ja-trabalho">
+            <span class="subtitulo">Já trabalhou com Desenvolvimento?</span>
 
-            <input type="checkbox" id="Sim" name="sim" value="Sim" />
-            <label for="Sim">Sim</label>
+            <div class="input-checkbox">
+              <input type="checkbox" id="Sim" name="sim" value="Sim" />
+              <label for="Sim">Sim</label>
 
-            <input type="checkbox" id="Não" name="Não" value="Não" />
-            <label for="Não">Não</label>
+              <input type="checkbox" id="Nao" name="Nao" value="Nao" />
+              <label for="Nao">Não</label>
+            </div>
+          </div>
+          <div class="mandatory">
+            (*) Campos obrigatórios
           </div>
 
-          <div>
-            <span>(*) Campos obrigatórios</span>
+          <div class="formulario-enviar">
+            <button>Enviar</button>
+
+            <div>
+              <p class="privacy">
+                Ao clicar em enviar, você concorda com todos os termos
+                <br />
+                de uso de dados descritos em
+                <a href="">política de privacidade</a>
+              </p>
+            </div>
           </div>
 
-          <button>Enviar</button>
-          <div>
-            <p>
-              Ao clicar em enviar, você concorda com todos os termos
-              <br />
-              de uso de dados descritos em
-              <a href="">política de privacidade</a>
-            </p>
-          </div>
         </div>
+
+
       </form>
     </div>
+
     <div class="project">
       <img class="image-dev" src="./assets/img/dev.png" />
       <div class="project-text">
@@ -194,9 +202,9 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="opportunity">
-        <p>Oportunidade</p>
+    <div class="goals-cards">
+      <div class="goals-card">
+        <h1>Oportunidade</h1>
         <p>
           Acreditamos que a combinação
           <br>
@@ -208,8 +216,8 @@
         </p>
       </div>
 
-      <div class="community">
-        <p>Comunidade</p>
+      <div class="goals-card">
+        <h1>Comunidade</h1>
         <p>
           Dentro de um grupo de pessoas
           <br />
@@ -224,8 +232,8 @@
 
       </div>
 
-      <div class="experience">
-        <p>Experiência Real</p>
+      <div class="goals-card">
+        <h1>Experiência Real</h1>
         <p>
           Entendemos que somente as
           <br />
@@ -266,7 +274,7 @@
     </button>
 
     <div class="goals">
-      <h>Objetivos</h>
+      <h1>Objetivos</h1>
       <div class="goals-cards">
 
 
@@ -321,8 +329,9 @@
   </main>
 
   <footer>
-    <img src="./assets/img/logo+slogan.png" />
-    <button>Processo seletivo</button>
+    <img class="img-slogan" src="./assets/img/logo+slogan.png" />
+
+    <button class="button-white">Processo seletivo</button>
     <ul>
       <li><a>O Projeto</a></li>
       <li><a>O Problema</a></li>
