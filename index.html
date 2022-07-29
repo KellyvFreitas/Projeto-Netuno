@@ -16,22 +16,24 @@
 </head>
 
 <body>
+  <script src="./js/script.js"></script>
+
   <header>
     <img class="image-logo" src="./assets/img/logo.png" alt="Logo Netuno" />
     <nav>
       <ol>
-        <li><a>O Projeto</a></li>
-        <li><a>O Problema</a></li>
-        <li><a>Sua Jornada</a></li>
-        <li><a>Objetivos</a></li>
+        <li><a onclick="scrollar('project')">O Projeto</a></li>
+        <li><a onclick="scrollar('problem')">O Problema</a></li>
+        <li><a onclick="scrollar('journey')">Sua Jornada</a></li>
+        <li><a onclick="scrollar('goals')">Objetivos</a></li>
       </ol>
     </nav>
 
-    <button class="button-black">Processo Seletivo</button>
+    <button onclick="scrollar('formulario')" class="button-black">Processo Seletivo</button>
   </header>
 
   <main>
-    <div class="formulario">
+    <div id="formulario" class="formulario">
       <img src="./assets/img/bannertopo.png" alt="banner topo" />
       <form>
         <div class="formulario-dados-pessoais">
@@ -40,7 +42,7 @@
           <span class="subtitulo">Preencha seus dados</span>
 
           <div>
-            <input class="input-group" placeholder="Nome completo" type="text" />
+            <input id="input-name" class="input-group" placeholder="Nome completo" type="text" />
           </div>
 
           <input class="input-group" placeholder="E-mail" type="email" />
@@ -137,7 +139,7 @@
           </div>
 
           <div class="formulario-enviar">
-            <button>Enviar</button>
+            <button onclick="enviarFormulario()">Enviar</button>
 
             <div>
               <p class="privacy">
@@ -155,7 +157,7 @@
       </form>
     </div>
 
-    <div class="project">
+    <div id="project" class="project">
       <img class="image-dev" src="./assets/img/dev.png" />
       <div class="project-text">
         <h2>O Projeto</h2>
@@ -176,7 +178,7 @@
       </div>
     </div>
 
-    <div class="problem">
+    <div id="problem" class="problem">
       <img class="image-container2" src="./assets/img/Container2.png" alt="container2" />
       <div class="problem-text">
         <h2>O problema</h2>
@@ -247,7 +249,7 @@
     </div>
     </div>
 
-    <div>
+    <div id="journey">
       <h2 class="journey">Sua Jornada</h2>
       <span>
         <div class="container">
@@ -269,17 +271,17 @@
     </div>
 
 
-    <button class="selective">
+    <button onclick="scrollar('formulario')" class="selective">
       Quero me cadastrar para o <span>Processo Seletivo</span>
     </button>
 
-    <div class="goals">
-      <h1>Objetivos</h1>
+    <div id="goals" class="goals">
+      <p class="objective">Objetivos</p>
       <div class="goals-cards">
 
 
         <div class="goals-card">
-          <p>Otimizar</p>
+          <h1>Otimizar</h1>
           <p>
             Otimizar todo processo de
             <br />
@@ -296,7 +298,7 @@
         </div>
 
         <div class="goals-card">
-          <p>Gerar</p>
+          <h1>Gerar</h1>
           <p>
             Gerar novas oportunidades de
             <br />
@@ -312,7 +314,7 @@
 
         <div class="goals-card">
 
-          <p>Filtrar</p>
+          <h1>Filtrar</h1>
           <p>
             Criar oportunidades brilhantes
             <br />
@@ -331,12 +333,12 @@
   <footer>
     <img class="img-slogan" src="./assets/img/logo+slogan.png" />
 
-    <button class="button-white">Processo seletivo</button>
+    <button onclick="scrollar('formulario')" class="button-white">Processo seletivo</button>
     <ul>
-      <li><a>O Projeto</a></li>
-      <li><a>O Problema</a></li>
-      <li><a>Sua Jornada</a></li>
-      <li><a>Objetivos</a></li>
+      <li><a onclick="scrollar('project')">O Projeto</a></li>
+        <li><a onclick="scrollar('problem')">O Problema</a></li>
+        <li><a onclick="scrollar('journey')">Sua Jornada</a></li>
+        <li><a onclick="scrollar('goals')">Objetivos</a></li>
     </ul>
 
     <p class="contact">O contato
